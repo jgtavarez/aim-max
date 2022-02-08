@@ -1,35 +1,21 @@
-import { Home, Exercises, Leaderboard, Skills } from '../main/pages';
+import { lazy, LazyExoticComponent } from 'react';
+
+type JSXComponent = () => JSX.Element;
 
 interface Route {
-    to: string,
-    path: string,
-    component: any,
-    text: string
+    path: string;
+    to: string;
+    component: LazyExoticComponent<JSXComponent> | JSXComponent;
+    text: string;
 }
+
+const MainModule = lazy(() => import(/* webpackChunkName: "main_module"*/ '../main/layout/MainModule'))
 
 export const routes: Route[] = [
     {
-        to: '/home',
-        path: 'home',
-        component: Home,
-        text: 'Home'
-    },
-    {
-        to: '/exercises',
-        path: 'exercises',
-        component: Exercises,
-        text: 'Exercises'
-    },
-    {
-        to: '/leaderboard',
-        path: 'leaderboard',
-        component: Leaderboard,
-        text: 'Leaderboard'
-    },
-    {
-        to: '/skills',
-        path: 'skills',
-        component: Skills,
-        text: 'Skills'
-    },
+        path: '/*',
+        to: '/',
+        component: MainModule,
+        text: 'MainModule'
+    }
 ]
