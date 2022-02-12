@@ -1,4 +1,14 @@
-import { NavbarLinkProps, FooterMediaProps } from './interfaces/main.interfaces';
+import { NavbarLinkProps, FooterMediaProps, Card } from './interfaces/main.interfaces';
+import brain from './assets/brain.png';
+import speed from './assets/speed.png';
+import eye from './assets/eye.png';
+import valorantLogo from "./assets/valorantLogo.png"
+import rainboxLogo from "./assets/rainboxLogo.png"
+import overwatchLogo from "./assets/overwatchLogo.png"
+import csgoLogo from "./assets/csgoLogo.png"
+import apexLogo from "./assets/apexLogo.png"
+import dutyLogo from "./assets/dutyLogo.png"
+import fortniteLogo from "./assets/fortniteLogo.png"
 
 export const links: NavbarLinkProps[] = [
     {
@@ -17,6 +27,56 @@ export const links: NavbarLinkProps[] = [
         to: 'skills',
         text: 'Skills',
     },
+]
+
+export const cards: Card[] = [
+    {
+        media: brain,
+        title: 'Analytical',
+        text: 'Brain exercises'
+    },
+    {
+        media: eye,
+        title: 'Reaction',
+        text: 'Improve your reaction'
+    },
+    {
+        media: speed,
+        title: 'Speed',
+        text: 'You will be faster'
+    },
+]
+
+export const games: any[] = [
+    {
+        image: valorantLogo,
+        name: 'Valorant',
+    },
+    {
+        image: rainboxLogo,
+        name: 'Rainbox Six',
+    },
+    {
+        image: overwatchLogo,
+        name: 'Overwatch',
+    },
+    {
+        image: csgoLogo,
+        name: 'CSGO',
+    },
+    {
+        image: apexLogo,
+        name: 'Apex',
+    },
+    {
+        image: dutyLogo,
+        name: 'Call of Duty',
+    },
+    {
+        image: fortniteLogo,
+        name: 'Fortnite',
+    },
+    
 ]
 
 export const medias: FooterMediaProps[] = [
