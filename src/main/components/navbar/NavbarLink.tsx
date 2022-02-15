@@ -1,9 +1,13 @@
-import { NavbarLinkProps } from '../../interfaces/main.interfaces';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { NavbarContext } from './Navbar';
 
-export const NavbarLink = ({ to, text }: NavbarLinkProps) => {
+export interface Props {
+    to: string;
+    text: string;
+}
+
+export const NavbarLink = ({ to, text }: Props) => {
 
     const { toggleNavbar } = useContext(NavbarContext)
 

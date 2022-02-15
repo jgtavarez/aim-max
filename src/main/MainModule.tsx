@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { Home, Exercises, Leaderboard, Skills } from './pages';
 import { Navbar } from './components/navbar';
 import { Footer } from './components/footer';
-import { links, medias } from './MainComponent';
+import { links, medias } from './data/data';
 
 export const MainModule = () => {
     return (

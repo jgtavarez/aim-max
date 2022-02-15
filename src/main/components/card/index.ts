@@ -1,5 +1,5 @@
 import { Card as CardHOC } from './Card';
-import { CardHOCProps } from '../../interfaces/main.interfaces';
+import { CardHOCProps } from '../../interfaces/card.interfaces';
 import { CardMedia } from './CardMedia';
 import { CardTitle } from './CardTitle';
 import { CardText } from './CardText';

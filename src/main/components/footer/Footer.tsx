@@ -1,6 +1,10 @@
-import { FooterProps } from '../../interfaces/main.interfaces';
+import { ReactElement } from 'react';
 
-export const Footer = ({ children }: FooterProps) => {
+export interface Props {
+    children: ReactElement | ReactElement[];
+}
+
+export const Footer = ({ children }: Props) => {
     return (
         <div className='bg-bold-blue text-medium-gray py-6 lg:py-12'>
             <footer className='flex flex-col items-center container mx-auto gap-5 lg:flex-row lg:justify-between lg:items-end'>

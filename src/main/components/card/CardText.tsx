@@ -1,7 +1,11 @@
 import { useContext } from 'react';
 import { CardContext } from "./Card";
 
-export const CardText = ({ text }: { text?: string }) => {
+export interface Props {
+    text?: string;
+}
+
+export const CardText = ({ text }: Props) => {
 
     const { card } = useContext(CardContext)
 

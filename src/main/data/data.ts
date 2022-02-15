@@ -1,14 +1,16 @@
-import { NavbarLinkProps, FooterMediaProps, Card } from './interfaces/main.interfaces';
-import brain from './assets/brain.png';
-import speed from './assets/speed.png';
-import eye from './assets/eye.png';
-import valorantLogo from "./assets/valorantLogo.png"
-import rainboxLogo from "./assets/rainboxLogo.png"
-import overwatchLogo from "./assets/overwatchLogo.png"
-import csgoLogo from "./assets/csgoLogo.png"
-import apexLogo from "./assets/apexLogo.png"
-import dutyLogo from "./assets/dutyLogo.png"
-import fortniteLogo from "./assets/fortniteLogo.png"
+import { Card } from '../interfaces/card.interfaces';
+import { Props as FooterMediaProps } from '../components/footer/FooterMedia';
+import { Props as NavbarLinkProps } from '../components/navbar/NavbarLink';
+import brain from '../assets/brain.png';
+import speed from '../assets/speed.png';
+import eye from '../assets/eye.png';
+import valorantLogo from "../assets/valorantLogo.png"
+import rainboxLogo from "../assets/rainboxLogo.png"
+import overwatchLogo from "../assets/overwatchLogo.png"
+import csgoLogo from "../assets/csgoLogo.png"
+import apexLogo from "../assets/apexLogo.png"
+import dutyLogo from "../assets/dutyLogo.png"
+import fortniteLogo from "../assets/fortniteLogo.png"
 
 export const links: NavbarLinkProps[] = [
     {

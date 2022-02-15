@@ -1,12 +1,16 @@
 import { NavLink } from 'react-router-dom';
-import { createContext } from 'react';
-import { NavbarProps, NavbarContextProps } from '../../interfaces/main.interfaces';
+import { createContext, ReactElement } from 'react';
+import { NavbarContextProps } from '../../interfaces/navbar.interfaces';
 import { useNavbar } from '../../hooks/useNavbar';
 
 export const NavbarContext = createContext({} as NavbarContextProps);
 const { Provider } = NavbarContext;
 
-export const Navbar = ({ children }: NavbarProps) => {
+export interface Props {
+  children: ReactElement | ReactElement[];
+}
+
+export const Navbar = ({ children }: Props) => {
 
   const { show, toggleNavbar } = useNavbar();
 

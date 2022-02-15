@@ -1,7 +1,11 @@
 import { useContext } from 'react';
 import { CardContext } from "./Card";
 
-export const CardMedia = ({ media }: { media?: string }) => {
+export interface Props {
+  media?: string;
+}
+
+export const CardMedia = ({ media }: Props) => {
 
   const { card } = useContext(CardContext)
 

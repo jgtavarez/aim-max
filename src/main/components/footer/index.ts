@@ -1,6 +1,6 @@
 import { Footer as FooterHOC } from './Footer';
+import { FooterHOCProps } from '../../interfaces/footer.interfaces';
 import { FooterMedia } from './FooterMedia';
-import { FooterHOCProps } from '../../interfaces/main.interfaces';
 
 export const Footer: FooterHOCProps = Object.assign( FooterHOC, {
     Media: FooterMedia,

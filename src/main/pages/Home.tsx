@@ -1,5 +1,5 @@
 import hero from "../assets/hero.png";
-import { cards, games } from '../MainComponent';
+import { cards, games } from '../data/data';
 import { Card } from "../components/card";
 
 import a from '../assets/abilities.png'
@@ -31,8 +31,8 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="bg-light-gray">
-        <div className="container mx-auto py-14 text-center lg:py-20 lg:text-left lg:flex lg:justify-between">
+      <div className="bg-light-gray p-4 md:p-6">
+        <div className="container mx-auto flex flex-col justify-center py-14 text-center gap-10 md:py-20 md:flex-row md:text-left md:justify-between md:items-center">
           <div>
             <div>
               <h3 className="text-medium-blue text-4xl font-bold lg:text-5xl">16 DIFFERENT EXERCISES</h3>
@@ -52,7 +52,7 @@ export const Home = () => {
               }
             </div>
           </div>
-          <img src={a} alt="" />
+          <img src={a} className="md:w-6/12 lg:w-auto" alt="" />
         </div>
       </div>
     </>

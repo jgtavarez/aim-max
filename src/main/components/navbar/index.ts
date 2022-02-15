@@ -1,6 +1,6 @@
 import { Navbar as NavbarHOC } from './Navbar';
+import { NavbarHOCProps } from '../../interfaces/navbar.interfaces';
 import { NavbarLink } from './NavbarLink';
-import { NavbarHOCProps } from '../../interfaces/main.interfaces';
 
 export const Navbar: NavbarHOCProps = Object.assign( NavbarHOC, {
     Link: NavbarLink,
