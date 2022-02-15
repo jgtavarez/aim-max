@@ -1,16 +1,7 @@
 import { Card } from '../interfaces/card.interfaces';
 import { Props as FooterMediaProps } from '../components/footer/FooterMedia';
 import { Props as NavbarLinkProps } from '../components/navbar/NavbarLink';
-import brain from '../assets/brain.png';
-import speed from '../assets/speed.png';
-import eye from '../assets/eye.png';
-import valorantLogo from "../assets/valorantLogo.png"
-import rainboxLogo from "../assets/rainboxLogo.png"
-import overwatchLogo from "../assets/overwatchLogo.png"
-import csgoLogo from "../assets/csgoLogo.png"
-import apexLogo from "../assets/apexLogo.png"
-import dutyLogo from "../assets/dutyLogo.png"
-import fortniteLogo from "../assets/fortniteLogo.png"
+import { valorantLogo, rainboxLogo, overwatchLogo, csgoLogo, apexLogo, dutyLogo, fortniteLogo, brain, eye, speed, reactionTime, searchNumber, findImpostor, searchColor, colorText, captureColor, shapeChange, soundReaction, schulteTable, visualMemory, trafficLghts, pressKey, targetShoot, longestLine, clickLimit, typingTest } from '../assets';
 
 export const links: NavbarLinkProps[] = [
     {
@@ -49,6 +40,89 @@ export const cards: Card[] = [
     },
 ]
 
+export const cardsExercises: Card[] = [
+    {
+        media: reactionTime,
+        title: 'Reaction Time',
+        text: 'React as soon as possible to the color change'
+    },
+    {
+        media: searchNumber,
+        title: 'Search Number',
+        text: 'According to the representation of the text'
+    },
+    {
+        media: findImpostor,
+        title: 'Find Impostor',
+        text: 'Remove the boxes that do not match the others'
+    },
+    {
+        media: searchColor,
+        title: 'Search Color',
+        text: 'According to the representation of the text'
+    },
+    {
+        media: colorText,
+        title: 'Color Text',
+        text: 'Reaction when color matching text'
+    },
+    {
+        media: captureColor,
+        title: 'Capture Color',
+        text: 'Capture the green color on the board'
+    },
+    {
+        media: shapeChange,
+        title: 'Shape Change',
+        text: 'React to shape change when they are the same'
+    },
+    {
+        media: soundReaction,
+        title: 'Sound Reaction',
+        text: 'React as fast as you can to the sound'
+    },
+    {
+        media: schulteTable,
+        title: 'Schulte Table',
+        text: 'Find the numbers in numerical order'
+    },
+    {
+        media: visualMemory,
+        title: 'Visual Memory',
+        text: 'Memorize and click the orange boxes'
+    },
+    {
+        media: trafficLghts,
+        title: 'Traffic Lghts',
+        text: 'React when the traffic light is green'
+    },
+    {
+        media: pressKey,
+        title: 'Press Key',
+        text: 'Press the key in the correct direction'
+    },
+    {
+        media: targetShoot,
+        title: 'Target Shoot',
+        text: 'React as soon as possible to the color change'
+    },
+    {
+        media: longestLine,
+        title: 'Longest Line',
+        text: 'Find and click on the longest line'
+    },
+    {
+        media: clickLimit,
+        title: 'Click Limit',
+        text: 'Reach the maximum number of clicks'
+    },
+    {
+        media: typingTest,
+        title: 'Typing Test',
+        text: 'Write a series of words as fast as you can'
+    },
+]
+
 export const games: any[] = [
     {
         image: valorantLogo,
@@ -78,7 +152,7 @@ export const games: any[] = [
         image: fortniteLogo,
         name: 'Fortnite',
     },
-    
+
 ]
 
 export const medias: FooterMediaProps[] = [
