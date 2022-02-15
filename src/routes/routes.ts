@@ -9,7 +9,7 @@ interface Route {
     text: string;
 }
 
-const MainModule = lazy(() => import(/* webpackChunkName: "main_module"*/ '../main/layout/MainModule'))
+const MainModule = lazy(() => import(/* webpackChunkName: "main_module"*/ '../main/MainModule'))
 
 export const routes: Route[] = [
     {
