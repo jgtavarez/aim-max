@@ -11,6 +11,7 @@ export interface Card {
 
 export interface CardContextProps {
     card: Card;
+    variant?: string;
 }
 
 export interface CardHOCProps {

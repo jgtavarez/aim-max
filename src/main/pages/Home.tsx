@@ -1,8 +1,10 @@
+import React from 'react';
 import hero from "../assets/hero.png";
 import { cards, games } from '../data/data';
 import { Card } from "../components/card";
 
 import a from '../assets/abilities.png'
+import { NavLink } from 'react-router-dom';
 
 export const Home = () => {
   return (
@@ -13,7 +15,9 @@ export const Home = () => {
           <div className="text-center mx-auto max-w-xl py-14 lg:text-left lg:py-0 lg:mx-0">
             <h1 className="text-white font-bold text-4xl lg:text-6xl">TRAIN YOUR SHOOTING SKILLS</h1>
             <p className="text-medium-gray my-6 lg:my-10">Master your aim in videogames through brain games and cognitive tests.</p>
-            <button className="bg-light-blue text-medium-blue py-5 px-7 font-bold lg:text-3xl lg:py-6 lg:px-8">LET'S START</button>
+            <NavLink to="/exercises">
+              <button className="bg-light-blue text-medium-blue py-5 px-7 font-bold lg:text-3xl lg:py-6 lg:px-8">LET'S START</button>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -22,17 +26,17 @@ export const Home = () => {
         <div className="container mx-auto flex gap-11 justify-between items-center overflow-x-auto px-14 py-7">
           {
             games.map(({ image, name }) => (
-              <>
-                <img key={name} src={image} className="hover:brightness-200" alt="game" style={{transition: "0.7s ease"}} />
+              <React.Fragment key={name}>
+                <img key={name} src={image} className="hover:brightness-200" alt="game" style={{ transition: "0.7s ease" }} />
                 <div className="md:border-l-2 md:h-36 md:border-white"></div>
-              </>
+              </React.Fragment>
             ))
           }
         </div>
       </div>
 
-      <div className="bg-light-gray p-4 md:p-6">
-        <div className="container mx-auto flex flex-col justify-center py-14 text-center gap-10 md:py-20 md:flex-row md:text-left md:justify-between md:items-center">
+      <div className="bg-light-gray py-14 px-5 md:py-24">
+        <div className="container mx-auto flex flex-col justify-center text-center gap-10 md:flex-row md:text-left md:justify-between md:items-center">
           <div>
             <div>
               <h3 className="text-medium-blue text-4xl font-bold lg:text-5xl">16 DIFFERENT EXERCISES</h3>
@@ -41,7 +45,7 @@ export const Home = () => {
             <div className="flex flex-col gap-8">
               {
                 cards.map(card => (
-                  <Card key={card.title} card={card}>
+                  <Card key={card.title} card={card} variant='rectangle'>
                     <Card.Media />
                     <div>
                       <Card.Title />

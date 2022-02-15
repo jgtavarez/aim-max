@@ -10,6 +10,7 @@ module.exports = {
         'bold-blue': '#0E1420',
         'medium-gray': '#888D93',
         'light-gray': '#E6E6EE',
+        'medium-white': '#F4FAFB',
       },
     },
   },
