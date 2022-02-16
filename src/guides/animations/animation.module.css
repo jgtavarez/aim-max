@@ -1,0 +1,12 @@
+.entrance{
+    transition: 0.5s ease;
+    animation: entrance 0.9s ease;
+}
+
+@keyframes entrance{
+    from{
+        transform: translateX(-100vw);
+    }to{
+        transform: translateX(0px);
+    }
+}
