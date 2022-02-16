@@ -1,7 +1,7 @@
 import { Card } from '../interfaces/card.interfaces';
 import { Props as FooterMediaProps } from '../components/footer/FooterMedia';
 import { Props as NavbarLinkProps } from '../components/navbar/NavbarLink';
-import { valorantLogo, rainboxLogo, overwatchLogo, csgoLogo, apexLogo, dutyLogo, fortniteLogo, brain, eye, speed, reactionTime, searchNumber, findImpostor, searchColor, colorText, captureColor, shapeChange, soundReaction, schulteTable, visualMemory, trafficLghts, pressKey, targetShoot, longestLine, clickLimit, typingTest } from '../assets';
+import { valorantLogo, rainbowLogo, overwatchLogo, csgoLogo, apexLogo, dutyLogo, fortniteLogo, brain, eye, speed, reactionTime, searchNumber, findImpostor, searchColor, colorText, captureColor, shapeChange, soundReaction, schulteTable, visualMemory, trafficLghts, pressKey, targetShoot, longestLine, clickLimit, typingTest } from '../assets';
 
 export const links: NavbarLinkProps[] = [
     {
@@ -19,6 +19,10 @@ export const links: NavbarLinkProps[] = [
     {
         to: 'skills',
         text: 'Skills',
+    },
+    {
+        to: 'guides',
+        text: 'Guides',
     },
 ]
 
@@ -129,8 +133,8 @@ export const games: any[] = [
         name: 'Valorant',
     },
     {
-        image: rainboxLogo,
-        name: 'Rainbox Six',
+        image: rainbowLogo,
+        name: 'Rainbow Six',
     },
     {
         image: overwatchLogo,

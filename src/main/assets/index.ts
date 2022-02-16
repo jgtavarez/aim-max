@@ -1,5 +1,5 @@
 export { default as valorantLogo } from './valorantLogo.png';
-export { default as rainboxLogo } from './rainboxLogo.png';
+export { default as rainbowLogo } from './rainbowLogo.png';
 export { default as overwatchLogo } from './overwatchLogo.png';
 export { default as csgoLogo } from './csgoLogo.png';
 export { default as apexLogo } from './apexLogo.png';

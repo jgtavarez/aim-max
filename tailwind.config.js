@@ -11,6 +11,7 @@ module.exports = {
         'medium-gray': '#888D93',
         'light-gray': '#E6E6EE',
         'medium-white': '#F4FAFB',
+        'medium-orange': '#FB7C03',
       },
     },
   },

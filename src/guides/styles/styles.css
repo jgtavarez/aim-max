@@ -1,0 +1,64 @@
+.mini-valorant{
+    background-image: url(../assets/mini-valorant.jpg);
+}
+.mini-valorant.on{
+    background-image: url(../assets/mini-valorant-on.jpg);
+}
+.mini-overwatch{
+    background-image: url(../assets/mini-overwatch.jpg);
+}
+.mini-overwatch.on{
+    background-image: url(../assets/mini-overwatch-on.jpg);
+}
+.mini-apex{
+    background-image: url(../assets/mini-apex.jpg);
+}
+.mini-apex.on{
+    background-image: url(../assets/mini-apex-on.jpg);
+}
+.mini-csgo{
+    background-image: url(../assets/mini-csgo.jpg);
+}
+.mini-csgo.on{
+    background-image: url(../assets/mini-csgo-on.jpg);
+}
+.mini-fortnite{
+    background-image: url(../assets/mini-fortnite.jpg);
+}
+.mini-fortnite.on{
+    background-image: url(../assets/mini-fortnite-on.jpg);
+}
+.mini-cod{
+    background-image: url(../assets/mini-cod.jpg);
+}
+.mini-cod.on{
+    background-image: url(../assets/mini-cod-on.jpg);
+}
+.mini-rainbow{
+    background-image: url(../assets/mini-rainbow.jpg);
+}
+.mini-rainbow.on{
+    background-image: url(../assets/mini-rainbow-on.jpg);
+}
+
+.bg-valorant{
+    background-image: url(../assets/bg-valorant.jpg);
+}
+.bg-overwatch{
+    background-image: url(../assets/bg-overwatch.png);
+}
+.bg-apex{
+    background-image: url(../assets/bg-apex.png);
+}
+.bg-csgo{
+    background-image: url(../assets/bg-csgo.jpg);
+}
+.bg-fortnite{
+    background-image: url(../assets/bg-fortnite.jpg);
+}
+.bg-cod{
+    background-image: url(../assets/bg-cod.jpg);
+}
+.bg-rainbow{
+    background-image: url(../assets/bg-rainbow.png);
+}
