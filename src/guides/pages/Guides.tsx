@@ -28,7 +28,7 @@ export const Guides = () => {
           </div>
 
           <div className="z-10">
-            <p className="text-medium-gray text-3xl font-medium mb-6 ml-16">Select your game</p>
+            <p className="text-medium-gray text-3xl font-medium mt-6 mb-6 ml-16 md:mt-0">Select your game</p>
 
             <div className="ml-16 overflow-hidden overflow-y-scroll hidden-scroll" style={{ width: '350px', height: '650px' }}>
               {
@@ -40,7 +40,7 @@ export const Guides = () => {
 
           </div>
 
-          <div className='mr-16'>
+          <div className='hidden md:block mr-16'>
             <h3 className='text-white text-right font-bold text-7xl uppercase'><span className='text-medium-orange'>GET BETTER</span><br /> AT {guide}</h3>
             <p className='text-white text-right mt-7 mb-11'>with our tips you will learn <br /> what is necessary to <span className='text-medium-orange'>master the game</span></p>
             <NavLink to={guide}>
@@ -50,7 +50,7 @@ export const Guides = () => {
 
         </div>
 
-        <div className='h-screen w-96 absolute left-0 top-0' style={{ background: 'rgba(28,22,70,0.8)', width: '27rem' }}></div>
+        <div className='h-screen w-screen md:w-100 absolute left-0 top-0' style={{ background: 'rgba(28,22,70,0.8)'}}></div>
 
       </div>
     </Provider>
