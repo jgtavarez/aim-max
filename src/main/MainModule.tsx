@@ -1,8 +1,8 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { Home, Exercises, Leaderboard, Skills } from './pages';
-import { Navbar } from './components/navbar';
-import { Footer } from './components/footer';
-import { links, medias } from './data/data';
+import { Navbar } from '../shared/components/navbar';
+import { Footer } from '../shared/components/footer';
+import { links, medias } from '../shared/data/data';
 
 export const MainModule = () => {
     return (
