@@ -20,7 +20,7 @@ export { default as shapeChange } from './shapeChange.png';
 export { default as soundReaction } from './soundReaction.png';
 export { default as schulteTable } from './schulteTable.png';
 export { default as visualMemory } from './visualMemory.png';
-export { default as trafficLghts } from './trafficLghts.png';
+export { default as trafficLights } from './trafficLights.png';
 export { default as pressKey } from './pressKey.png';
 export { default as targetShoot } from './targetShoot.png';
 export { default as longestLine } from './longestLine.png';

@@ -7,7 +7,7 @@ export const GuidesModule = () => {
             <Route path="" element={<Guides />} />
             <Route path="/:game" element={<GuidesGame />} />
 
-            <Route path="*" element={<Navigate to="home" replace />} />
+            <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
     )
 }
