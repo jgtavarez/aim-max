@@ -1,30 +1,5 @@
 import { Card } from '../interfaces/card.interfaces';
-import { Props as FooterMediaProps } from '../components/footer/FooterMedia';
-import { Props as NavbarLinkProps } from '../components/navbar/NavbarLink';
 import { valorantLogo, rainbowLogo, overwatchLogo, csgoLogo, apexLogo, dutyLogo, fortniteLogo, brain, eye, speed, reactionTime, searchNumber, findImpostor, searchColor, colorText, captureColor, shapeChange, soundReaction, schulteTable, visualMemory, trafficLghts, pressKey, targetShoot, longestLine, clickLimit, typingTest } from '../assets';
-
-export const links: NavbarLinkProps[] = [
-    {
-        to: 'home',
-        text: 'Home',
-    },
-    {
-        to: 'exercises',
-        text: 'Exercises',
-    },
-    {
-        to: 'leaderboard',
-        text: 'Leaderboard',
-    },
-    {
-        to: 'skills',
-        text: 'Skills',
-    },
-    {
-        to: 'guides',
-        text: 'Guides',
-    },
-]
 
 export const cards: Card[] = [
     {
@@ -157,23 +132,4 @@ export const games: any[] = [
         name: 'Fortnite',
     },
 
-]
-
-export const medias: FooterMediaProps[] = [
-    {
-        icon: './twitter.png',
-        href: '/',
-    },
-    {
-        icon: './facebook.png',
-        href: '/',
-    },
-    {
-        icon: './youtube.png',
-        href: '/',
-    },
-    {
-        icon: './git.png',
-        href: 'https://github.com/JuanGabriel2960/aim-max',
-    },
 ]

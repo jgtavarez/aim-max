@@ -18,8 +18,8 @@ export const Navbar = ({ children }: Props) => {
     <Provider value={{ show, toggleNavbar }}>
       <div className="bg-bold-blue text-white p-4 lg:p-7">
         <nav className="flex justify-between items-center container mx-auto">
-          <NavLink to='home'>
-            <img src="./logo.png" className="w-24 md:w-full" alt="logo" />
+          <NavLink to='/home'>
+            <img src="/logo.png" className="w-24 md:w-full" alt="logo" />
           </NavLink>
 
           <span className='font-bold text-4xl z-20 cursor-pointer lg:hidden' onClick={toggleNavbar}>{show ? '✖' : '☰'}</span>
