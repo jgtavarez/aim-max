@@ -3,11 +3,13 @@ import { ReactionTime } from './pages';
 
 export const ExercisesModule = () => {
     return (
-        <Routes>
-            <Route path="reaction-time" element={<ReactionTime />} />
+        <div>
+            <Routes>
+                <Route path="reaction-time" element={<ReactionTime />} />
 
-            <Route path="*" element={<Navigate to="/home" replace />} />
-        </Routes>
+                <Route path="*" element={<Navigate to="/home" replace />} />
+            </Routes>
+        </div>
     )
 }
 

@@ -1,0 +1,1 @@
+export { default as reactionTime } from './reaction-time.png';
