@@ -1,38 +1,31 @@
 import { useState, useContext } from 'react';
-import { getRandomSeconds } from '../helpers/time';
 import { exercisesContext } from '../ExercisesModule';
+import { getRandomNumbers } from '../helpers/numbers';
 
-export const useReactionTime = () => {
+export const useSearchNumber = () => {
 
-    const MIN_TIME: number = 380;
+    const MIN_TIME: number = 4870;
+    const MAX_CORRECT: number = 4;
 
     const { gameOptions, handleStart, handleScore, handleFeedback, handleTime } = useContext(exercisesContext)
 
-
     const [state, setState] = useState({
-        green: false,
+        correct: 0,
+        find: getRandomNumbers()[0],
+        numbers: getRandomNumbers(),
     })
 
     const startGame = () => {
         handleStart()
-
-        const second = getRandomSeconds(5000, 1000)
-
-        setTimeout(() => {
-            setState(prev => ({
-                ...prev,
-                green: true,
-            }));
-            handleTime()
-        }, second);
+        handleTime()
     }
 
-    const click = () => {
+    const click = (numberClicked: number) => {
         if (gameOptions.start === false || gameOptions.finish === true) {
             return
         }
 
-        if (state.green) {
+        if(state.correct===MAX_CORRECT){
             let date2 = new Date().getTime()
             let score = (date2 - gameOptions.actualTime)
 
@@ -43,6 +36,17 @@ export const useReactionTime = () => {
             } else {
                 handleFeedback(`Test failed. Time must be less than ${MIN_TIME} ms`)
             }
+
+            return
+        }
+
+        if (numberClicked === state.find) {
+            setState(prev => ({
+                ...prev,
+                correct: state.correct+1,
+                find: getRandomNumbers()[0],
+                numbers: getRandomNumbers(),
+            }));
         }
     }
 
