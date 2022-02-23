@@ -1,5 +1,5 @@
 import { ExplanationScreen } from '../components/ExplanationScreen';
-import { reactionTime } from '../assets';
+import { searchNumber } from '../assets';
 import { useSearchNumber } from '../hooks/useSearchNumber';
 import { ResultCard } from '../components/ResultCard';
 
@@ -8,7 +8,7 @@ export const SearchNumber = () => {
 
   return (
     <div className='bg-bold-blue'>
-      <ExplanationScreen img={reactionTime} explanation="Click on the appropriate number as quickly as possible" onClick={startGame} />
+      <ExplanationScreen img={searchNumber} explanation="Click on the appropriate number as quickly as possible" onClick={startGame} />
 
       <div className='h-screen flex flex-col justify-center items-center gap-8'>
         <div className='max-w-3xl'>

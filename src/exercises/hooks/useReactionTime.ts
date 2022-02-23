@@ -2,6 +2,10 @@ import { useState, useContext } from 'react';
 import { getRandomSeconds } from '../helpers/time';
 import { exercisesContext } from '../ExercisesModule';
 
+export interface State {
+    green: boolean;
+}
+
 export const useReactionTime = () => {
 
     const MIN_TIME: number = 380;
@@ -9,7 +13,7 @@ export const useReactionTime = () => {
     const { gameOptions, handleStart, handleScore, handleFeedback, handleTime } = useContext(exercisesContext)
 
 
-    const [state, setState] = useState({
+    const [state, setState] = useState<State>({
         green: false,
     })
 

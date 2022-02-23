@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactionTime, SearchNumber } from './pages';
+import { ReactionTime, SearchNumber, FindImpostor } from './pages';
 import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
 
@@ -25,6 +25,7 @@ export const ExercisesModule = () => {
                 <Routes>
                     <Route path="reaction-time" element={<ReactionTime />} />
                     <Route path="search-number" element={<SearchNumber />} />
+                    <Route path="find-impostor" element={<FindImpostor />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>

@@ -1,7 +1,7 @@
-export const getRandomNumbers = () => {
+export const getRandomNumbers = (amount: number, start: number, end: number) => {
     let numbers = [];
-    while (numbers.length < 9) {
-        let r = Math.floor(Math.random() * 9) + 1;
+    while (numbers.length < amount) {
+        let r = Math.floor(Math.random() * end) + start;
         if (numbers.indexOf(r) === -1) numbers.push(r);
     }
 
