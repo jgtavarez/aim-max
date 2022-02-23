@@ -1,24 +1,24 @@
 import { useState, useContext } from 'react';
 import { exercisesContext } from '../ExercisesModule';
-import { getRandomNumbers } from '../helpers/numbers';
+import { getRandomColors } from '../helpers/strings';
 
 export interface State {
     correct: number;
-    find: number;
-    numbers: number[];
+    find: string;
+    colors: string[];
 }
 
-export const useSearchNumber = () => {
+export const useSearchColor = () => {
 
-    const MIN_TIME: number = 4870;
+    const MIN_TIME: number = 4380;
     const MAX_CORRECT: number = 4;
 
     const { gameOptions, handleStart, handleScore, handleFeedback, handleTime } = useContext(exercisesContext)
 
     const [state, setState] = useState<State>({
         correct: 0,
-        find: getRandomNumbers(9, 1, 9)[0],
-        numbers: getRandomNumbers(9, 1, 9),
+        find: getRandomColors()[0],
+        colors: getRandomColors()
     })
 
     const startGame = () => {
@@ -26,12 +26,12 @@ export const useSearchNumber = () => {
         handleTime()
     }
 
-    const click = (numberClicked: number) => {
+    const click = (colorClicked: string) => {
         if (gameOptions.start === false || gameOptions.finish === true) {
             return
         }
 
-        if (numberClicked === state.find) {
+        if (colorClicked === state.find) {
             if (state.correct === MAX_CORRECT) {
                 let date2 = new Date().getTime()
                 let score = (date2 - gameOptions.actualTime)
@@ -50,8 +50,8 @@ export const useSearchNumber = () => {
             setState(prev => ({
                 ...prev,
                 correct: state.correct + 1,
-                find: getRandomNumbers(9, 1, 9)[0],
-                numbers: getRandomNumbers(9, 1, 9),
+                find: getRandomColors()[0],
+                colors: getRandomColors()
             }));
         }
     }

@@ -13,7 +13,7 @@ export const SearchNumber = () => {
       <div className='h-screen flex flex-col justify-center items-center gap-8'>
         <div className='max-w-3xl'>
           <div className='bg-white flex justify-center items-center py-6'>
-            <h3 className='font-bold text-5xl text-medium-blue'>{state.find}</h3>
+            <h3 className='font-bold text-5xl text-bold-blue'>{state.find}</h3>
           </div>
           <div className='flex flex-wrap'>
             {

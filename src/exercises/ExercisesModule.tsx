@@ -1,8 +1,9 @@
 import { createContext } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactionTime, SearchNumber, FindImpostor } from './pages';
+import { ReactionTime, SearchNumber, FindImpostor, SearchColor } from './pages';
 import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
+import './styles/styles.css'
 
 interface exercisesContext {
     gameOptions: useExercisesState;
@@ -26,6 +27,7 @@ export const ExercisesModule = () => {
                     <Route path="reaction-time" element={<ReactionTime />} />
                     <Route path="search-number" element={<SearchNumber />} />
                     <Route path="find-impostor" element={<FindImpostor />} />
+                    <Route path="search-color" element={<SearchColor />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>
