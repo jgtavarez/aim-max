@@ -25,3 +25,31 @@
 .box-yellow{
     background-color: #eab308;
 }
+
+.text-black{
+    color: #18181b;
+}
+.text-blue{
+    color: #3b82f6;
+}
+.text-gray{
+    color: #71717a;
+}
+.text-green{
+    color: #22c55e;
+}
+.text-orange{
+    color: #f97316;
+}
+.text-pink{
+    color: #ec4899;
+}
+.text-purple{
+    color: #a855f7;
+}
+.text-red{
+    color: #ef4444;
+}
+.text-yellow{
+    color: #eab308;
+}
