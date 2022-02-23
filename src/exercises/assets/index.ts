@@ -2,7 +2,7 @@ export { default as reactionTime } from './reaction-time.png';
 export { default as searchNumber } from './search-number.png';
 export { default as findImpostor } from './find-impostor.png';
 export { default as searchColor } from './search-color.png';
-export { default as colorText } from './reaction-time.png';
+export { default as colorText } from './color-text.png';
 export { default as captureColor } from './capture-color.png';
 export { default as shapeChange } from './shape-change.png';
 export { default as soundReaction } from './sound-reaction.png';
