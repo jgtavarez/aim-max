@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor } from './pages';
+import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor, ShapeChange } from './pages';
 import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
 import './styles/styles.css'
@@ -30,6 +30,7 @@ export const ExercisesModule = () => {
                     <Route path="search-color" element={<SearchColor />} />
                     <Route path="color-text" element={<ColorText />} />
                     <Route path="capture-color" element={<CaptureColor />} />
+                    <Route path="shape-change" element={<ShapeChange />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>

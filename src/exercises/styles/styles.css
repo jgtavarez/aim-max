@@ -53,3 +53,25 @@
 .text-yellow{
     color: #eab308;
 }
+
+.triangle{
+    background-image: url(../assets/triangle.png);
+}
+.square{
+    background-image: url(../assets/square.png);
+}
+.rectangle{
+    background-image: url(../assets/rectangle.png);
+}
+.circle{
+    background-image: url(../assets/circle.png);
+}
+.rhomb{
+    background-image: url(../assets/rhomb.png);
+}
+.parallelogram{
+    background-image: url(../assets/parallelogram.png);
+}
+.trapeze{
+    background-image: url(../assets/trapeze.png);
+}

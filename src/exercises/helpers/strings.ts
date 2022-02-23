@@ -9,3 +9,15 @@ export const getRandomColors = () => {
     }
     return colors;
 }
+
+export const getRandomShapes = () => {
+    let shapes = ['triangle','square','rectangle','circle','rhomb','parallelogram','trapeze'];
+    var j, x, i;
+    for (i = shapes.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = shapes[i];
+        shapes[i] = shapes[j];
+        shapes[j] = x;
+    }
+    return shapes;
+}
