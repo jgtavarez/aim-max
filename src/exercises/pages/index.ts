@@ -10,3 +10,4 @@ export { SchulteTable } from './SchulteTable';
 export { VisualMemory } from './VisualMemory';
 export { TrafficLights } from './TrafficLights';
 export { PressKey } from './PressKey';
+export { TargetShoot } from './TargetShoot';

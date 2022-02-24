@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor, ShapeChange, SoundReaction, SchulteTable, VisualMemory, TrafficLights, PressKey } from './pages';
+import * as Pages from './pages';
 import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
 import './styles/styles.css';
@@ -25,18 +25,19 @@ export const ExercisesModule = () => {
         <Provider value={{ gameOptions, handleStart, handleScore, handleFeedback, handleTime }}>
             <div>
                 <Routes>
-                    <Route path="reaction-time" element={<ReactionTime />} />
-                    <Route path="search-number" element={<SearchNumber />} />
-                    <Route path="find-impostor" element={<FindImpostor />} />
-                    <Route path="search-color" element={<SearchColor />} />
-                    <Route path="color-text" element={<ColorText />} />
-                    <Route path="capture-color" element={<CaptureColor />} />
-                    <Route path="shape-change" element={<ShapeChange />} />
-                    <Route path="sound-reaction" element={<SoundReaction />} />
-                    <Route path="schulte-table" element={<SchulteTable />} />
-                    <Route path="visual-memory" element={<VisualMemory />} />
-                    <Route path="traffic-lights" element={<TrafficLights />} />
-                    <Route path="press-key" element={<PressKey />} />
+                    <Route path="reaction-time" element={<Pages.ReactionTime />} />
+                    <Route path="search-number" element={<Pages.SearchNumber />} />
+                    <Route path="find-impostor" element={<Pages.FindImpostor />} />
+                    <Route path="search-color" element={<Pages.SearchColor />} />
+                    <Route path="color-text" element={<Pages.ColorText />} />
+                    <Route path="capture-color" element={<Pages.CaptureColor />} />
+                    <Route path="shape-change" element={<Pages.ShapeChange />} />
+                    <Route path="sound-reaction" element={<Pages.SoundReaction />} />
+                    <Route path="schulte-table" element={<Pages.SchulteTable />} />
+                    <Route path="visual-memory" element={<Pages.VisualMemory />} />
+                    <Route path="traffic-lights" element={<Pages.TrafficLights />} />
+                    <Route path="press-key" element={<Pages.PressKey />} />
+                    <Route path="target-shoot" element={<Pages.TargetShoot />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>

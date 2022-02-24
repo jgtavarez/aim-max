@@ -75,3 +75,10 @@
 .trapeze{
     background-image: url(../assets/trapeze.png);
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .no-phone{
+        display: none;
+    }
+}
