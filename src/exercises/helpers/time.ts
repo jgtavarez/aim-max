@@ -1,3 +1,3 @@
-export const getRandomSeconds = (x: number, y: number) => {
-    return Math.floor((Math.random() * x) + y);
+export const getRandomSeconds = (min: number, max: number) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }

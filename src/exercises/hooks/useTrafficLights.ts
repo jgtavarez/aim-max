@@ -16,7 +16,7 @@ export const useTrafficLights = () => {
 
     const [state, setState] = useState<State>({
         lightIndex: 0,
-        times: [1000, 1000, 1000, getRandomSeconds(6000, 2000)],
+        times: [1000, 1000, 1000, getRandomSeconds(2000, 6000)],
     })
 
     const startGame = () => {

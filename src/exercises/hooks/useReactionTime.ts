@@ -20,7 +20,7 @@ export const useReactionTime = () => {
     const startGame = () => {
         handleStart()
 
-        const second = getRandomSeconds(5000, 1000)
+        const second = getRandomSeconds(1000, 5000)
 
         setTimeout(() => {
             setState(prev => ({

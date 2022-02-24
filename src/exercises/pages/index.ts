@@ -9,3 +9,4 @@ export { SoundReaction } from './SoundReaction';
 export { SchulteTable } from './SchulteTable';
 export { VisualMemory } from './VisualMemory';
 export { TrafficLights } from './TrafficLights';
+export { PressKey } from './PressKey';

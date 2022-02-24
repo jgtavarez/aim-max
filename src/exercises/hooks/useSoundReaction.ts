@@ -21,7 +21,7 @@ export const useSoundReaction = () => {
     const startGame = () => {
         handleStart()
 
-        const second = getRandomSeconds(6000, 1000)
+        const second = getRandomSeconds(1000, 6000)
 
         setTimeout(() => {
             setState(prev => ({
