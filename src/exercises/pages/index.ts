@@ -11,3 +11,4 @@ export { VisualMemory } from './VisualMemory';
 export { TrafficLights } from './TrafficLights';
 export { PressKey } from './PressKey';
 export { TargetShoot } from './TargetShoot';
+export { LongestLine } from './LongestLine';
