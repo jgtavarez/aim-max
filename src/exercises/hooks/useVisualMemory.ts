@@ -27,10 +27,10 @@ export const useVisualMemory = () => {
         handleStart()
         handleTime()
 
-        barajar()
+        flip()
     }
 
-    const barajar = () => {
+    const flip = () => {
         setTimeout(() => {
             setState(prev => ({
                 ...prev,
@@ -59,7 +59,7 @@ export const useVisualMemory = () => {
                     memory: getRandomNumbers(5, 0, 25),
                 }));
 
-                barajar()
+                flip()
             }
 
             if (state.correct === MAX_CORRECT) {

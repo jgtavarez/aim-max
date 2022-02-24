@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor, ShapeChange, SoundReaction, SchulteTable, VisualMemory } from './pages';
+import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor, ShapeChange, SoundReaction, SchulteTable, VisualMemory, TrafficLights } from './pages';
 import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
 import './styles/styles.css';
@@ -35,6 +35,7 @@ export const ExercisesModule = () => {
                     <Route path="sound-reaction" element={<SoundReaction />} />
                     <Route path="schulte-table" element={<SchulteTable />} />
                     <Route path="visual-memory" element={<VisualMemory />} />
+                    <Route path="traffic-lights" element={<TrafficLights />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>

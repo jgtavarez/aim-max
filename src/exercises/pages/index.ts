@@ -8,3 +8,4 @@ export { ShapeChange } from './ShapeChange';
 export { SoundReaction } from './SoundReaction';
 export { SchulteTable } from './SchulteTable';
 export { VisualMemory } from './VisualMemory';
+export { TrafficLights } from './TrafficLights';
