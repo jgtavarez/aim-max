@@ -8,7 +8,7 @@ export const SchulteTable = () => {
 
     return (
         <div className='bg-bold-blue'>
-            <ExplanationScreen img={schulteTable} explanation="Find the two down arrows and order them as quickly as possible" onClick={startGame} />
+            <ExplanationScreen img={schulteTable} explanation="Click on the numbers in ascending order as fast as possible" onClick={startGame} />
 
             <div className='h-screen flex flex-col justify-center items-center gap-8'>
                 <div className='max-w-5xl'>

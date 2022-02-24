@@ -1,0 +1,10 @@
+.flip{
+    animation: flip 0.3s linear;
+}
+@keyframes flip{
+    from{
+        transform: rotateY(0);
+    }to{
+        transform: rotateY(180deg);
+    }
+}

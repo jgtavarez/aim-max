@@ -7,3 +7,4 @@ export { CaptureColor } from './CaptureColor';
 export { ShapeChange } from './ShapeChange';
 export { SoundReaction } from './SoundReaction';
 export { SchulteTable } from './SchulteTable';
+export { VisualMemory } from './VisualMemory';

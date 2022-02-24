@@ -1,9 +1,10 @@
 import { createContext } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor, ShapeChange, SoundReaction, SchulteTable } from './pages';
+import { ReactionTime, SearchNumber, FindImpostor, SearchColor, ColorText, CaptureColor, ShapeChange, SoundReaction, SchulteTable, VisualMemory } from './pages';
 import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
-import './styles/styles.css'
+import './styles/styles.css';
+import './animations/animations.css';
 
 interface exercisesContext {
     gameOptions: useExercisesState;
@@ -33,6 +34,7 @@ export const ExercisesModule = () => {
                     <Route path="shape-change" element={<ShapeChange />} />
                     <Route path="sound-reaction" element={<SoundReaction />} />
                     <Route path="schulte-table" element={<SchulteTable />} />
+                    <Route path="visual-memory" element={<VisualMemory />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>
