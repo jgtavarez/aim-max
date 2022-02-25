@@ -26,3 +26,5 @@ export { default as targetShoot } from './targetShoot.png';
 export { default as longestLine } from './longestLine.png';
 export { default as clickLimit } from './clickLimit.png';
 export { default as typingTest } from './typingTest.png';
+
+export { default as divider } from './divider.png';

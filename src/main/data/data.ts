@@ -168,3 +168,10 @@ export const games: any[] = [
     },
 
 ]
+
+export const skills: string[] = [
+    'flicking',
+    'tracking',
+    'switching',
+    'strafe'
+]
