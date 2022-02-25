@@ -12,8 +12,8 @@ export const ShapeChange = () => {
 
             <div className='h-screen flex flex-col justify-center items-center gap-8' onClick={click}>
                 <div className='flex gap-20'>
-                    <div className={`w-96 h-96 bg-cover ${state.static}`}></div>
-                    <div className={`w-96 h-96 bg-cover ${state.dynamic}`}></div>
+                    <div className={`w-60 h-60 md:w-96 md:h-96 bg-cover ${state.static}`}></div>
+                    <div className={`w-60 h-60 md:w-96 md:h-96 bg-cover ${state.dynamic}`}></div>
                 </div>
                 <ResultCard />
             </div>

@@ -8,7 +8,7 @@ export const TrafficLights = () => {
 
     let circles: any[] = []
     for (let index = 0; index < 8; index++) {
-        circles.push(<div key={index} className={`w-28 h-28 border-2 border-white ${state.lightIndex==4 && index>=4 ? 'box-green' : ''} ${index>=state.lightIndex && index<4 ? 'box-red' : ''}`} style={{ borderRadius: '50%', flex: '1 0 18%' }}></div>)
+        circles.push(<div key={index} className={`w-28 h-28 border-2 border-white ${state.lightIndex===4 && index>=4 ? 'box-green' : ''} ${index>=state.lightIndex && index<4 ? 'box-red' : ''}`} style={{ borderRadius: '50%', flex: '1 0 18%' }}></div>)
     }
 
     return (

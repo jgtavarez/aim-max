@@ -8,7 +8,7 @@ export const FindImpostor = () => {
 
   let boxes: any[] = []
   for (let index = 0; index < 16; index++) {
-    boxes.push(<div key={index} onClick={() => click(index)} className='w-40 h-40 flex flex-col justify-center items-center border-2 border-white cursor-pointer text-white'>{state.impostors.includes(index) ? <img src={arrowDown} alt="arrow-up" /> : <img src={arrowUp} alt="arrow-down" />}</div>)
+    boxes.push(<div key={index} style={{ border: '3px solid white', flex: '1 0 21%' }} onClick={() => click(index)} className='w-40 h-40 flex flex-col justify-center items-center border-2 border-white cursor-pointer text-white'>{state.impostors.includes(index) ? <img src={arrowDown} alt="arrow-up" /> : <img src={arrowUp} alt="arrow-down" />}</div>)
   }
 
   return (
