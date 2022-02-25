@@ -1,6 +1,7 @@
 import { cardsExercises } from '../data/data';
 import { Card } from '../components/card';
 import exercisesBanner from '../assets/exercisesBanner.png';
+import { NavLink } from 'react-router-dom';
 
 export const Exercises = () => {
   return (
@@ -21,11 +22,13 @@ export const Exercises = () => {
           <div className='flex justify-center items-center flex-wrap gap-4 lg:gap-10 lg:mx-24'>
             {
               cardsExercises.map(card => (
-                <Card key={card.title} card={card} >
-                  <Card.Media />
-                  <Card.Title />
-                  <Card.Text />
-                </Card>
+                <NavLink key={card.title} to={card.to}>
+                  <Card card={card} >
+                    <Card.Media />
+                    <Card.Title />
+                    <Card.Text />
+                  </Card>
+                </NavLink>
               ))
             }
           </div>
