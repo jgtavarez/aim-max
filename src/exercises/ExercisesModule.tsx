@@ -39,6 +39,7 @@ export const ExercisesModule = () => {
                     <Route path="press-key" element={<Pages.PressKey />} />
                     <Route path="target-shoot" element={<Pages.TargetShoot />} />
                     <Route path="longest-line" element={<Pages.LongestLine />} />
+                    <Route path="click-limit" element={<Pages.ClickLimit />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>
