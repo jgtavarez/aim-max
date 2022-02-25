@@ -13,3 +13,4 @@ export { PressKey } from './PressKey';
 export { TargetShoot } from './TargetShoot';
 export { LongestLine } from './LongestLine';
 export { ClickLimit } from './ClickLimit';
+export { TypingTest } from './TypingTest';
