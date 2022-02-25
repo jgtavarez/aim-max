@@ -31,12 +31,6 @@ export const usePressKey = () => {
         }
 
         if (event.keyCode === state.key) {
-            setState(prev => ({
-                ...prev,
-                correct: prev.correct + 1,
-                key: getRandomSeconds(37, 40)
-            }));
-            new Audio(audio).play()
 
             if (state.correct === MAX_CORRECT) {
                 let date2 = new Date().getTime()
@@ -49,7 +43,18 @@ export const usePressKey = () => {
                 } else {
                     handleFeedback(`Test failed. Time must be less than ${MIN_TIME} ms`)
                 }
+
+                return
             }
+
+            setState(prev => ({
+                ...prev,
+                correct: prev.correct + 1,
+                key: getRandomSeconds(37, 40)
+            }));
+            new Audio(audio).play()
+
+
         }
     }
 
