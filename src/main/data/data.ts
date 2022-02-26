@@ -1,14 +1,14 @@
 import { Card } from '../interfaces/card.interfaces';
-import { valorantLogo, rainbowLogo, overwatchLogo, csgoLogo, apexLogo, dutyLogo, fortniteLogo, brain, eye, speed, reactionTime, searchNumber, findImpostor, searchColor, colorText, captureColor, shapeChange, soundReaction, schulteTable, visualMemory, trafficLights, pressKey, targetShoot, longestLine, clickLimit, typingTest } from '../assets';
+import { valorantLogo, rainbowLogo, overwatchLogo, csgoLogo, apexLogo, dutyLogo, fortniteLogo, analytical, reaction, speed, reactionTime, searchNumber, findImpostor, searchColor, colorText, captureColor, shapeChange, soundReaction, schulteTable, visualMemory, trafficLights, pressKey, targetShoot, longestLine, clickLimit, typingTest } from '../assets';
 
 export const cards: Card[] = [
     {
-        media: brain,
+        media: analytical,
         title: 'Analytical',
         text: 'Brain exercises'
     },
     {
-        media: eye,
+        media: reaction,
         title: 'Reaction',
         text: 'Improve your reaction'
     },

@@ -1,12 +1,29 @@
 import React from 'react';
-import hero from "../assets/hero.png";
 import { cards, games } from '../data/data';
 import { Card } from "../components/card";
-
-import a from '../assets/abilities.png'
+import { analyticalAbilities, reactionAbilities, speedAbilities, hero } from '../assets';
 import { NavLink } from 'react-router-dom';
+import { useHome } from '../hooks/useHome';
 
 export const Home = () => {
+  const { state, handleCard } = useHome()
+
+  let img: string;
+
+  switch (state.card) {
+    case 'Analytical':
+      img = analyticalAbilities;
+      break;
+    case 'Reaction':
+      img = reactionAbilities;
+      break;
+    case 'Speed':
+      img = speedAbilities;
+      break;
+    default:
+      img = analyticalAbilities;
+  }
+
   return (
     <>
       <div className="bg-medium-blue">
@@ -45,18 +62,20 @@ export const Home = () => {
             <div className="flex flex-col gap-8">
               {
                 cards.map(card => (
-                  <Card key={card.title} card={card} variant='rectangle'>
-                    <Card.Media />
-                    <div>
-                      <Card.Title />
-                      <Card.Text />
-                    </div>
-                  </Card>
+                  <div key={card.title} onClick={() => handleCard(card.title)}>
+                    <Card card={card} className={state.card === card.title ? 'dark' : ''} variant='rectangle'>
+                      <Card.Media />
+                      <div>
+                        <Card.Title />
+                        <Card.Text />
+                      </div>
+                    </Card>
+                  </div>
                 ))
               }
             </div>
           </div>
-          <img src={a} className="md:w-6/12 lg:w-auto" alt="" />
+          <img src={img} className="md:w-6/12 lg:w-auto" alt="" />
         </div>
       </div>
     </>

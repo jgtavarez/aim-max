@@ -1,0 +1,9 @@
+.dark{
+    background-color: #172333;
+}
+.dark h4, .dark p{
+    color: white!important;
+}
+.dark img{
+    filter: brightness(0) invert(1);
+}

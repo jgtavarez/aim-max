@@ -6,9 +6,12 @@ export { default as apexLogo } from './apexLogo.png';
 export { default as dutyLogo } from './dutyLogo.png';
 export { default as fortniteLogo } from './fortniteLogo.png';
 
-export { default as brain } from './brain.png';
+export { default as analytical } from './analytical.png';
+export { default as reaction } from './reaction.png';
 export { default as speed } from './speed.png';
-export { default as eye } from './eye.png';
+export { default as analyticalAbilities } from './analytical-abilities.png';
+export { default as reactionAbilities } from './reaction-abilities.png';
+export { default as speedAbilities } from './speed-abilities.png';
 
 export { default as reactionTime } from './reactionTime.png';
 export { default as searchNumber } from './searchNumber.png';
@@ -28,3 +31,4 @@ export { default as clickLimit } from './clickLimit.png';
 export { default as typingTest } from './typingTest.png';
 
 export { default as divider } from './divider.png';
+export { default as hero } from './hero.png';

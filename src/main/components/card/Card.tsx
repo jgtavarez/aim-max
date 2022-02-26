@@ -8,13 +8,14 @@ export interface Props {
   children: ReactElement | ReactElement[];
   card: CardInterface;
   variant?: string;
+  className?: string;
 }
 
-export const Card = ({ children, card, variant }: Props) => {
+export const Card = ({ children, card, variant, className='' }: Props) => {
   if (variant === 'rectangle') {
     return (
       <Provider value={{ card, variant }}>
-        <div className='flex items-center w-full py-7 px-6 cursor-pointer text-left rounded-3xl'>
+        <div className={`flex items-center w-full py-7 px-6 cursor-pointer text-left rounded-3xl ${className}`}>
           {children}
         </div>
       </Provider>
