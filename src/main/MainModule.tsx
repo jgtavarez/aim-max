@@ -19,7 +19,7 @@ export const MainModule = () => {
             <Routes>
                 <Route path="home" element={<Home />} />
                 <Route path="exercises" element={<Exercises />} />
-                <Route path="leaderboard" element={<Leaderboard />} />
+                <Route path="leaderboard/:exercise" element={<Leaderboard />} />
                 <Route path="skills" element={<Skills />} />
 
                 <Route path="*" element={<Navigate to="/home" replace />} />
