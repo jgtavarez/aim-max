@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { getLeaderboard } from '../api/getLeaderboard';
+import { Leaderboard } from '../interfaces/interfaces';
 
 interface State {
-    data: any[];
+    data: Leaderboard[];
     loading: boolean;
 }
 

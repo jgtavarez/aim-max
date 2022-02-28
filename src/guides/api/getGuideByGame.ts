@@ -3,5 +3,9 @@ export const getGuideByGame = async (game: string) => {
     const resp = await fetch(url);
     const data = await resp.json();
 
-    return data
+    if(resp.ok){
+        return data
+    }else{
+        return false
+    }
 }

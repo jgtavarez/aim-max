@@ -3,7 +3,8 @@ import { Home, Exercises, Leaderboard, Skills } from './pages';
 import { Navbar } from '../shared/components/navbar';
 import { Footer } from '../shared/components/footer';
 import { links, medias } from '../shared/data/data';
-import './styles/styles.css'
+import './styles/styles.css';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 export const MainModule = () => {
     return (
