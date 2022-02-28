@@ -23,6 +23,120 @@ interface CardWithUrl extends Card{
     to: string
 }
 
+export const cardsExercisesLeader: CardWithUrl[] = [
+    {
+        media: reactionTime,
+        title: 'Reaction Time',
+        text: 'React as soon as possible to the color change',
+        to: '/leaderboard/reaction-time'
+    },
+    {
+        media: searchNumber,
+        title: 'Search Number',
+        text: 'According to the representation of the text',
+        to: '/leaderboard/search-number'
+
+    },
+    {
+        media: findImpostor,
+        title: 'Find Impostor',
+        text: 'Remove the boxes that do not match the others',
+        to: '/leaderboard/find-impostor'
+
+    },
+    {
+        media: searchColor,
+        title: 'Search Color',
+        text: 'According to the representation of the text',
+        to: '/leaderboard/search-color'
+
+    },
+    {
+        media: colorText,
+        title: 'Color Text',
+        text: 'Reaction when color matching text',
+        to: '/leaderboard/color-text'
+
+    },
+    {
+        media: captureColor,
+        title: 'Capture Color',
+        text: 'Capture the green color on the board',
+        to: '/leaderboard/capture-color'
+
+    },
+    {
+        media: shapeChange,
+        title: 'Shape Change',
+        text: 'React to shape change when they are the same',
+        to: '/leaderboard/shape-change'
+
+    },
+    {
+        media: soundReaction,
+        title: 'Sound Reaction',
+        text: 'React as fast as you can to the sound',
+        to: '/leaderboard/sound-reaction'
+
+    },
+    {
+        media: schulteTable,
+        title: 'Schulte Table',
+        text: 'Find the numbers in numerical order',
+        to: '/leaderboard/schulte-table'
+
+    },
+    {
+        media: visualMemory,
+        title: 'Visual Memory',
+        text: 'Memorize and click the orange boxes',
+        to: '/leaderboard/visual-memory'
+
+    },
+    {
+        media: trafficLights,
+        title: 'Traffic Lights',
+        text: 'React when the traffic light is green',
+        to: '/leaderboard/traffic-lights'
+
+    },
+    {
+        media: pressKey,
+        title: 'Press Key',
+        text: 'Press the key in the correct direction',
+        to: '/leaderboard/press-key'
+
+    },
+    {
+        media: targetShoot,
+        title: 'Target Shoot',
+        text: 'React as soon as possible to the color change',
+        to: '/leaderboard/target-shoot'
+
+    },
+    {
+        media: longestLine,
+        title: 'Longest Line',
+        text: 'Find and click on the longest line',
+        to: '/leaderboard/longest-line'
+
+    },
+    {
+        media: clickLimit,
+        title: 'Click Limit',
+        text: 'Reach the maximum number of clicks',
+        to: '/leaderboard/click-limit'
+
+    },
+    {
+        media: typingTest,
+        title: 'Typing Test',
+        text: 'Write a series of words as fast as you can',
+        to: '/leaderboard/typing-test'
+
+    },
+]
+
 export const cardsExercises: CardWithUrl[] = [
     {
         media: reactionTime,
