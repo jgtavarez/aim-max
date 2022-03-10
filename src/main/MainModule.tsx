@@ -23,6 +23,7 @@ export const MainModule = () => {
                 <Route path="leaderboard/:exercise" element={<Leaderboard />} />
                 <Route path="skills" element={<Skills />} />
 
+                <Route path="leaderboard" element={<Navigate to="/leaderboard/reaction-time" replace />} />
                 <Route path="*" element={<Navigate to="/home" replace />} />
             </Routes>
 

@@ -11,7 +11,7 @@ export const links: NavbarLinkProps[] = [
         text: 'Exercises',
     },
     {
-        to: '/leaderboard/reaction-time',
+        to: '/leaderboard',
         text: 'Leaderboard',
     },
     {
