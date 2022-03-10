@@ -16,6 +16,12 @@ export const GuidesGame = () => {
     return <Navigate to='/guides' />
   }
 
+  if(loading){
+    return(
+      <p>Loading...</p>
+    )
+  }
+
   return (
     <>
       <Navbar>
@@ -73,7 +79,7 @@ export const GuidesGame = () => {
           <div className="flex flex-col gap-3 text-2xl md:flex-row md:justify-between md:flex-wrap lg:gap-10 lg:text-2.5xl">
             {
               data.game_guide?.summary.map((paragraph, i) => (
-                <p key={paragraph} className={`md:inline-block ${i===0 ? 'w-full' : 'flex-1'}`}>{paragraph}</p>
+                <p key={paragraph} className={`md:inline-block ${i === 0 ? 'w-full' : 'flex-1'}`}>{paragraph}</p>
               ))
             }
           </div>

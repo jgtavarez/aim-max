@@ -52,10 +52,52 @@ button{
 .hidden-scroll::-webkit-scrollbar{
   width: 0px;
 }
-/* Responsive */
-@media only screen and (min-width: 680px) {
-    
+
+.svg-loader{
+  display:flex;
+  position: relative;
+  align-content: space-around;
+  justify-content: center;
 }
-@media only screen and (min-width: 980px) {
-    
+.loader-svg{
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  fill: none;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke: #172333;
+}
+.loader-svg.bg{
+  stroke-width: 8px;
+  stroke: rgb(212, 210, 210);
+}
+.animate{
+  stroke-dasharray: 242.6;
+  animation: fill-animation 1s cubic-bezier(1,1,1,1) 0s infinite;
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  max-width: 80%;
+}
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes fill-animation{
+  0%{
+    stroke-dasharray: 40 242.6;
+    stroke-dashoffset: 0;
+  }
+  50%{
+    stroke-dasharray: 141.3;
+    stroke-dashoffset: 141.3;
+  }
+  100%{
+    stroke-dasharray: 40 242.6;
+    stroke-dashoffset: 282.6;
+  }
 }

@@ -1,11 +1,12 @@
 import { Suspense } from 'react';
 import { BrowserRouter, Navigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
+import { ScreenLoader } from '../shared/components/ScreenLoader';
 import { routes } from './routes';
 
 export const Navigation = () => {
     return (
-        <Suspense fallback={<span>Loading...</span>}>
+        <Suspense fallback={<ScreenLoader />}>
             <BrowserRouter>
                     <Routes>
                         {
