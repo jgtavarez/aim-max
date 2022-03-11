@@ -19,7 +19,7 @@ export const useClickLimit = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('click-limit')
         time()
     }
 

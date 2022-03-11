@@ -21,7 +21,7 @@ export const usePressKey = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('press-key')
         handleTime()
     }
 

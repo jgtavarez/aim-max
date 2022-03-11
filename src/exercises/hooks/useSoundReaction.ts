@@ -19,7 +19,7 @@ export const useSoundReaction = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('sound-reaction')
 
         const second = getRandomSeconds(1000, 6000)
 

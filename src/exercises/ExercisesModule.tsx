@@ -5,13 +5,17 @@ import { useExercises } from './hooks/useExercises';
 import { State as useExercisesState } from './hooks/useExercises';
 import './styles/styles.css';
 import './animations/animations.css';
+import { SaveScore } from './components/SaveScore';
 
 interface exercisesContext {
     gameOptions: useExercisesState;
-    handleStart: () => void;
+    handleStart: (exercise: string) => void;
     handleScore: (score: number) => void;
     handleFeedback: (feedback: string) => void;
     handleTime: () => void;
+    openSaveScore: () => void;
+    closeSaveScore: () => void;
+    handlesaveScoreSuccessful: (saveScoreSuccessful: boolean) => void;
 }
 
 export const exercisesContext = createContext({} as exercisesContext);
@@ -19,11 +23,12 @@ const { Provider } = exercisesContext;
 
 export const ExercisesModule = () => {
 
-    const { gameOptions, handleStart, handleScore, handleFeedback, handleTime } = useExercises()
+    const { gameOptions, handleStart, handleScore, handleFeedback, handleTime, openSaveScore, closeSaveScore, handlesaveScoreSuccessful } = useExercises()
 
     return (
-        <Provider value={{ gameOptions, handleStart, handleScore, handleFeedback, handleTime }}>
+        <Provider value={{ gameOptions, handleStart, handleScore, handleFeedback, handleTime, openSaveScore, closeSaveScore, handlesaveScoreSuccessful }}>
             <div>
+                <SaveScore />
                 <Routes>
                     <Route path="reaction-time" element={<Pages.ReactionTime />} />
                     <Route path="search-number" element={<Pages.SearchNumber />} />

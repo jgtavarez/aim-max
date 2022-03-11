@@ -22,7 +22,7 @@ export const useSchulteTable = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('schulte-table')
         handleTime()
     }
 

@@ -22,7 +22,7 @@ export const useSearchNumber = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('search-number')
         handleTime()
     }
 

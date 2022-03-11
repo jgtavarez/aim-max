@@ -19,7 +19,7 @@ export const useColorText = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('color-text')
         check()
     }
 
