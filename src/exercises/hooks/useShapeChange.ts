@@ -19,7 +19,7 @@ export const useShapeChange = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('shape-change')
         check()
     }
 

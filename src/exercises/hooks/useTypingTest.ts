@@ -27,7 +27,7 @@ export const useTypingTest = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('typing-test')
         handleTime()
     }
 

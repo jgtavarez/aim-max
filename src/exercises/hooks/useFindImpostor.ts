@@ -20,7 +20,7 @@ export const useFindImpostor = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('find-impostor')
         handleTime()
     }
 

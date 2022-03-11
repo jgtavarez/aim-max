@@ -20,7 +20,7 @@ export const useLongestLine = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('longest-line')
         handleTime()
     }
 

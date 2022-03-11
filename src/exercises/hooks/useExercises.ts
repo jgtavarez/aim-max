@@ -2,26 +2,33 @@ import { useState } from 'react';
 
 export interface State {
     start: boolean;
+    exercise: string;
     actualTime: number;
     score: number;
     feedback: string;
     finish: boolean;
+    saveScore: boolean;
+    saveScoreSuccessful: boolean;
 }
 
 export const useExercises = () => {
 
     const [gameOptions, setGameOptions] = useState<State>({
         start: false,
+        exercise: '',
         actualTime: 0,
         score: 0,
         feedback: '',
-        finish: false
+        finish: false,
+        saveScore: false,
+        saveScoreSuccessful: false
     })
 
-    const handleStart = () => {
+    const handleStart = (exercise: string) => {
         setGameOptions(prev => ({
             ...prev,
-            start: true
+            start: true,
+            exercise
         }));
     }
 
@@ -47,12 +54,36 @@ export const useExercises = () => {
         }));
     }
 
+    const openSaveScore = () => {
+        setGameOptions(prev => ({
+            ...prev,
+            saveScore: true
+        }));
+    }
+
+    const closeSaveScore = () => {
+        setGameOptions(prev => ({
+            ...prev,
+            saveScore: false
+        }));
+    }
+
+    const handlesaveScoreSuccessful = (saveScoreSuccessful: boolean) => {
+        setGameOptions(prev => ({
+            ...prev,
+            saveScoreSuccessful
+        }));
+    }
+
     return {
         gameOptions,
         handleStart,
         handleScore,
         handleFeedback,
-        handleTime
+        handleTime,
+        openSaveScore,
+        closeSaveScore,
+        handlesaveScoreSuccessful
     }
 
 }

@@ -22,7 +22,7 @@ export const useSearchColor = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('search-color')
         handleTime()
     }
 

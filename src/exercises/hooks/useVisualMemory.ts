@@ -24,7 +24,7 @@ export const useVisualMemory = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('visual-memory')
         handleTime()
 
         flip()

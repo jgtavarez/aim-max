@@ -18,7 +18,7 @@ export const useReactionTime = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('reaction-time')
 
         const second = getRandomSeconds(1000, 5000)
 

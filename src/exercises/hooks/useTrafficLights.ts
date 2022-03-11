@@ -20,7 +20,7 @@ export const useTrafficLights = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('traffic-lights')
         nextLight()
     }
 

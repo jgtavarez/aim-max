@@ -22,7 +22,7 @@ export const useTargetShoot = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('target-shoot')
         handleTime()
     }
 

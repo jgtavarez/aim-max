@@ -20,7 +20,7 @@ export const useCaptureColor = () => {
     })
 
     const startGame = () => {
-        handleStart()
+        handleStart('capture-color')
         handleTime()
     }
 
