@@ -44,7 +44,7 @@ export const useTypingTest = () => {
             return
         }
 
-        if (event.keyCode === 32) {
+        if (event.keyCode === 32 || event.keyCode === 229) {
             
 
             if (event.target.value.trim() === state.words[state.attempt]) {

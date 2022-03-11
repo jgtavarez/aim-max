@@ -2,9 +2,16 @@ import { ExplanationScreen } from '../components/ExplanationScreen';
 import { pressKey } from '../assets';
 import { usePressKey } from '../hooks/usePressKey';
 import { ResultCard } from '../components/ResultCard';
+import { NoPhone } from '../components/NoPhone';
 
 export const PressKey = () => {
     const { state, startGame, click } = usePressKey()
+
+    if (window.screen.width < 1000) {
+        return (
+          <NoPhone />
+        )
+      }
 
     return (
         <div className='bg-bold-blue'>
