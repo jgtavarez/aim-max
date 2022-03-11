@@ -53,6 +53,13 @@ button{
   width: 0px;
 }
 
+.swal2-popup .swal2-styled:focus{
+  box-shadow: none !important;
+}
+.swal2-popup {
+  font-size: 1.2rem !important;
+}
+
 .svg-loader{
   display:flex;
   position: relative;
