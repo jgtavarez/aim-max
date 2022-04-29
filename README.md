@@ -8,8 +8,8 @@
 [![languages](https://img.shields.io/github/languages/count/JuanGabriel2960/aim-max?color=%2327DDF2&style=flat-square)](#)
 
 <p>
-  <a href="#closedbook-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#constructionworker-installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#closed_book-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#construction_worker-installation">Installation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#hammer-built-with">Built with</a>&nbsp;&nbsp;&nbsp;
 </p>
@@ -41,10 +41,6 @@ Or via SSH:
 ```npm install```
 
 # :rocket: Getting Started
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
