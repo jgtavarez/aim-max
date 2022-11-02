@@ -39,6 +39,6 @@ export const medias: FooterMediaProps[] = [
     },
     {
         icon: '/git.png',
-        href: 'https://github.com/JuanGabriel2960/aim-max',
+        href: 'https://github.com/jgtavarez/aim-max',
     },
 ]

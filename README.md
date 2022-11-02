@@ -4,8 +4,8 @@
 
 # Aim Max
 
-[![author](https://img.shields.io/badge/author-JuanGabriel2960-27DDF2?style=flat-square)](https://github.com/JuanGabriel2960)
-[![languages](https://img.shields.io/github/languages/count/JuanGabriel2960/aim-max?color=%2327DDF2&style=flat-square)](#)
+[![author](https://img.shields.io/badge/author-jgtavarez-27DDF2?style=flat-square)](https://github.com/jgtavarez)
+[![languages](https://img.shields.io/github/languages/count/jgtavarez/aim-max?color=%2327DDF2&style=flat-square)](#)
 
 <p>
   <a href="#closed_book-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,11 +30,11 @@ Web Application responsible for helping you master your aim in video games throu
 
 **You need to install [Node.js](https://nodejs.org/en/download/) first, then in order to clone the project via HTTPS, run this command:**
 
-```git clone https://github.com/JuanGabriel2960/aim-max.git```
+```git clone https://github.com/jgtavarez/aim-max.git```
 
 Or via SSH:
 
-```git clone git@github.com:JuanGabriel2960/aim-max.git```
+```git clone git@github.com:jgtavarez/aim-max.git```
 
 **Install dependencies**
 
